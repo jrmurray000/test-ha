@@ -1,0 +1,17 @@
+apiVersion: skaffold/v1alpha2
+kind: Config
+build:
+  tagPolicy:
+    gitCommit: {}
+  artifacts:
+  - imageName: gcr.io/gke-on-prem-next-demo-2/loadgenerator
+    workspace: src/loadgenerator
+deploy:
+  kubectl:
+    manifests:
+    - ./kubernetes-manifests/**.yaml
+profiles:
+- name: gcb
+  build:
+    googleCloudBuild:
+      projectId: gke-on-prem-next-demo-2
