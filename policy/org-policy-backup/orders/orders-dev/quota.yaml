@@ -2,10 +2,10 @@ kind: ResourceQuota
 apiVersion: v1
 metadata:
   name: quota
-  namespace: shipping-staging
+  namespace: orders-dev
 spec:
   hard:
-    pods: "3"
-    cpu: "1"
-    memory: 1Gi
+    pods: "1"
+    cpu: "100m"
+    memory: 100Mi
 
