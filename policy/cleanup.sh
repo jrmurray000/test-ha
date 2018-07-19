@@ -1,6 +1,6 @@
 #!/bin/bash
 if [[ $(basename `pwd`) != "org-policy" ]]; then
-  echo "Must be run in org-policy dir"
+  echo "Must be run in org-policy dir as"
   echo "../cleanup.sh"
   exit 1
 fi

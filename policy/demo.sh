@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [[ $(basename `pwd`) != "org-policy" ]]; then
+  echo "Must be run in org-policy dir as"
+  echo "../demo.sh"
+  exit 1
+fi
+
 ########################
 # include the magic
 ########################
