@@ -56,7 +56,6 @@ pe "watch kubectl get namespaces"
 
 
 # show rolebinding inheritence from shipping-app-backend to shipping dev
-pe "tree"
 pe "kubectl get rolebinding -n shipping-dev"
 pe "kubectl get resourcequota -n shipping-dev -o yaml"
 
