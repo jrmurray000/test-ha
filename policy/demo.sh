@@ -55,11 +55,11 @@ pe "git status"
 pe "watch kubectl get namespaces"
 
 
-# show rolebinding inheritence from shipping-app-backend to shipping dev
-pe "kubectl get rolebinding -n shipping-dev"
-pe "kubectl get resourcequota -n shipping-dev -o yaml"
-pe "kubectl get resourcequota -n shipping-staging -o yaml"
-pe "kubectl get resourcequota -n shipping-prod -o yaml"
+# show rolebinding inheritence from orders to orders-dev
+pe "kubectl get rolebinding -n orders-dev"
+pe "kubectl get resourcequota -n orders-dev -o yaml"
+pe "kubectl get resourcequota -n orders-staging -o yaml"
+pe "kubectl get resourcequota -n orders-prod -o yaml"
 
 #show changes to cluster #2
 #pe "kubectl config use-context gke_nomos-198616_us-west1-a_nomos-cluster-2"
