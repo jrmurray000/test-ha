@@ -40,7 +40,7 @@ pe "tree"
 pe "git status"
 
 # show synced namespaces
-kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
+pe "kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast"
 pe "kubectl get namespaces"
 
 # add policies
