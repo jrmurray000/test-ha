@@ -30,7 +30,8 @@ DEMO_PROMPT="${GREEN}➜ ${CYAN}\W "
 # hide the evidence
 clear
 
-# run this script from root of git repository @ https://github.com/jrmurray000/foo-corp-example
+# run this script from
+# https://github.com:mdelio/spotlight-demo-next.git/policy/org-policy/
 
 # show directory structure
 pe "tree"
@@ -39,6 +40,7 @@ pe "tree"
 pe "git status"
 
 # show synced namespaces
+kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
 pe "kubectl get namespaces"
 
 # add policies
