@@ -52,8 +52,7 @@ pe "git push"
 pe "git status"
 
 # show synced namespaces
-pe "watch kubectl get namespaces"
-
+#pe "watch kubectl get namespaces"
 
 # show rolebinding inheritence from orders to orders-dev
 pe "kubectl get rolebinding -n orders-dev"
