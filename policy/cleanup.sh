@@ -7,3 +7,4 @@ fi
 rm -rf `ls |grep -v README`
 git add .
 git commit -m "cleanup namespaces and policies."
+git push
