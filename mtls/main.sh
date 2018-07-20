@@ -9,7 +9,7 @@ DEMO_PROMPT="${GREEN}➜ ${CYAN}\W "
 clear
 
 kubectl config use-context ${CTX_MTLS}
-kubectl delete -f mtls-auth-policy.yaml  2>&1 > /dev/null
+kubectl delete -f mtls-auth-policy.yaml  2> /dev/null
 pe "kubectl get ns"
 
 # In another terminal run (be sure you're using CTX_MTLS:
