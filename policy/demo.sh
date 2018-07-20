@@ -34,6 +34,8 @@ clear
 # https://github.com:mdelio/spotlight-demo-next.git/policy/org-policy/
 
 # show directory structure
+pe "gcloud config list"
+pe "kubectl config get-contexts | awk '{print $2}'" 
 pe "tree"
 
 # show git repo
