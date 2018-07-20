@@ -55,7 +55,7 @@ pe "git status"
 #pe "watch kubectl get namespaces"
 
 # show rolebinding inheritence from orders to orders-dev
-pe "kubectl get rolebinding -n orders-dev"
+#pe "kubectl get rolebinding -n orders-dev"
 pe "kubectl get resourcequota -n orders-dev -o yaml"
 #pe "kubectl get resourcequota -n orders-staging -o yaml"
 #pe "kubectl get resourcequota -n orders-prod -o yaml"
