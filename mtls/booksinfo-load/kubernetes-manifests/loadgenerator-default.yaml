@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: loadgenerator
+  name: legacy-client
 spec:
   replicas: 1
   template:

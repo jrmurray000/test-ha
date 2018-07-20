@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: loadgenerator
+  name: bookinfo-client
   namespace: bookinfo
 spec:
   replicas: 1
