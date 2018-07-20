@@ -35,7 +35,7 @@ clear
 
 # show directory structure
 pe "gcloud config list"
-pe "kubectl config get-contexts | awk '{print $2}'" 
+pe "kubectl config get-contexts | awk '{print \$2}'" 
 pe "tree"
 
 # show git repo
