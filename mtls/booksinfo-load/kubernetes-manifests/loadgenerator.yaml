@@ -14,7 +14,8 @@ spec:
       restartPolicy: Always
       containers:
       - name: main
-        image: gcr.io/gke-on-prem-next-demo-2/loadgenerator
+        image: gcr.io/gke-on-prem-next-demo-2/loadgenerator:23ac1ce
+        imagePullPolicy: IfNotPresent
         env:
         - name: FRONTEND_ADDR
           value: "productpage:9080"
