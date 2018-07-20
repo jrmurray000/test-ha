@@ -42,7 +42,7 @@ pe "tree"
 pe "git status"
 
 # show synced namespaces
-kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
+# kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
 #pe "kubectl get namespaces"
 
 # add policies
@@ -54,8 +54,9 @@ pe "git push"
 pe "git status"
 
 # show synced namespaces
-#pe "watch kubectl get namespaces"
+kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
 
+#pe "watch kubectl get namespaces"
 # show rolebinding inheritence from orders to orders-dev
 #pe "kubectl get rolebinding -n orders-dev"
 pe "kubectl get resourcequota -n orders-dev -o yaml"
