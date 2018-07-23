@@ -22,8 +22,6 @@ pe "less ${MANIFEST}"
 
 pe "${KUBECTL} apply -f ${MANIFEST}"
 
-pe "${KUBECTL} config view --minify --flatten"
-
 SECRET=$(${KUBECTL} -n gke-connect get secrets -o name | grep gke-connect-sa-token)
 ${KUBECTL} -n gke-connect get ${SECRET} -o=custom-columns=TOKEN:.data.token --no-headers | base64 -D > creds.txt
 pe "cat creds.txt"
