@@ -21,12 +21,12 @@ pe "kubectl get ns"
 NS="-n bookinfo"
 pe "kubectl ${NS} get deployments"
 pe "kubectl get deployments"
-pe "kubectl get services grafana -o wide -n istio-system"
 
 # Step #1
 p "Let's check to make sure that no policies are installed"
 pe "kubectl ${NS} get Policy"
 #pe "kubectl ${NS} get DestinationRule"
+pe "kubectl get services grafana -o wide -n istio-system"
 
 #p "Notes: 2 qps; from two 1 qps services (legacy and mesh)"
 
