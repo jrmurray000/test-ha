@@ -34,12 +34,12 @@ clear
 # https://github.com:mdelio/spotlight-demo-next.git/policy/org-policy/
 
 # show directory structure
-pe "gcloud config list"
+#pe "gcloud config list"
 pe "kubectl config get-contexts | awk '{print \$2}'" 
-pe "tree"
+#pe "tree"
 
 # show git repo
-pe "git status"
+#pe "git status"
 
 # show synced namespaces
 # kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
@@ -51,7 +51,7 @@ pe "tree"
 pe "git add ."
 pe "git commit -m \"Adding namespaces and policies.\""
 pe "git push"
-pe "git status"
+#pe "git status"
 
 # show synced namespaces
 kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
