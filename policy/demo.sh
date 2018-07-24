@@ -35,7 +35,7 @@ clear
 
 # show directory structure
 #pe "gcloud config list"
-pe "kubectl config get-contexts | awk '{print \$2}'" 
+pe "kubectl config get-contexts -o name" 
 #pe "tree"
 
 # show git repo
@@ -54,7 +54,8 @@ pe "git push"
 #pe "git status"
 
 # show synced namespaces
-kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
+#kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
+kubectl config use-context west
 
 #pe "watch kubectl get namespaces"
 # show rolebinding inheritence from orders to orders-dev
