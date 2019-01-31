@@ -54,8 +54,8 @@ pe "git push"
 #pe "git status"
 
 # show synced namespaces
-#kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
-kubectl config use-context west
+kubectl config use-context gke_gke-on-prem-next-demo-2_us-east4-a_east-coast
+#kubectl config use-context west
 
 #pe "watch kubectl get namespaces"
 # show rolebinding inheritence from orders to orders-dev
