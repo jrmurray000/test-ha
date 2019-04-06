@@ -1,7 +1,7 @@
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: pod-creators
+  name: sre-pod-creators
 subjects:
 - kind: User
   name: bob@foo-corp.com
